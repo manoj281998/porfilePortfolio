@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Naik - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS files/animations.css">
+    <link rel="stylesheet" href="CSS files/maincssfile.css">
+    <link rel="stylesheet" href="CSS files/navigationbar.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <ul class="header-left-section">
+                <li class="header-left-section-contents">Manoj Naik</li>
+            </ul>
+            <ul class="header-right-section">
+                <div class="navigation-buttons">
+                    <li><a class="anchor-buttons" href="#about-me-id">About Me</a></li>
+                    <li><a class="anchor-buttons" href="#skill-section-id">Skills</a></li>
+                    <li><a class="anchor-buttons" href="#project-section-id">Projects</a></li>
+                </div>
+                <div class="divider-vertical1"></div>
+                <div class="header-button-links">
+                    <li><a href="https://www.linkedin.com/in/manoj-naik-2a807b148"><img src="images/LinkedIn.svg"></a></li>
+                    <li><img src="images/github.png"></li>
+                    <li class="mode" onclick="
+                    changeMode();"><img src="images/lightmode.png"></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="about-me-id">
+        <div class="main-section">
+            <div class="main-left-section">
+                <div>Hi , My name is <span class="name1">Manoj</span></div>
+                <div>And i am a passionate</div>
+                <span id="element"></span>
+                <div class="details-box">
+                    <div class="details-box-text"><span>11</span> Skills</div>
+                    <div class="vertical-line2"></div>
+                    <div class="details-box-text"><span>1</span> Project</div>
+                    <div class="vertical-line3"></div>
+                    <div class="details-box-text"><span>10+</span> DSA Problems</div>
+                </div>
+            </div>
+            <div class="main-right-section">
+                <img src="images/MyProfilePhoto - Copy.jpeg">
+            </div>
+        </div>
+    </main>
+
+    <section id="skill-section-id" class="skill-section">
+        <div class="section-heading">
+            <div class="section-heading-text">Skills Aquired</div>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="skill-details-box">
+            <div class="skill-details-box-line">
+                <div class="skill-details-box-button">
+                    <img src="images/python.png">
+                    <div>Python</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/html.png">
+                    <div>HTML</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/css.png">
+                    <div>CSS</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/javascript.png">
+                    <div>Java Script</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/bash.png">
+                    <div>Bash</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/github.png">
+                    <div>Git</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/pytest.png">
+                    <div>Pytest</div>
+                </div>
+            </div>
+            <div class="skill-details-box-line">
+                <div class="skill-details-box-button">
+                    <img src="images/selenium.png">
+                    <div>Selenium</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/jira.png">
+                    <div>Jira</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/testrail.webp">
+                    <div>TestRail</div>
+                </div>
+                <div class="skill-details-box-button">
+                    <img src="images/postman.png">
+                    <div>Postman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-section-id" class="project-section">
+        <div class="section-heading">
+            <div class="section-heading-text">Personal Projects</div>
+            <div class="horizontal-line2"></div>
+        </div>
+        <div class="project-items">
+            <div class="project-item">
+                <div class="project-title">
+                    Portfolio
+                </div>
+                <p>The Portfolio Website project aims to create an engaging and visually appealing online platform to showcase a professional's portfolio, skills, and achievements. This website will serve as a digital portfolio that effectively represents the individual's expertise and helps them establish a strong online presence. The project will focus on creating an intuitive user experience and incorporating interactive elements to captivate visitors.</p>
+                <p><span>Skills learned :</span> HTML, CSS, javascript</p>
+                <div class="view-project-details-button">View Details  -></div>
+            </div>
+            <!-- <div class="project-item">
+                <div class="project-title">
+                    Youtube page
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">
+                    Stone Paper Sissor
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">
+                    ToDo List
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <script src="javascript.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Quality Assurance Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

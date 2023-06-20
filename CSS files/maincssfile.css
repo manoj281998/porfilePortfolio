@@ -1,0 +1,18 @@
+body {
+    font-family: Poppins, Arial;
+    background-color: #3f425a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1000px;
+}
+
+.light-mode-body{
+    background-color: white;
+    color: black;
+}
+
+html {  
+    scroll-behavior: smooth;  
+    scroll-padding-top: 80px;
+}
